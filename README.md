@@ -1,7 +1,7 @@
-# vCard - Personal portfolio
+# Personal portfolio
 
 vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
-
+Live link (https://dixit-dev.netlify.app/)
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
