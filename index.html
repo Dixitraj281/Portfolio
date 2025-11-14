@@ -2,24 +2,18 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>vCard - Personal Portfolio</title>
 
-  <!--
-    - favicon
-  -->
+  <!-- favicon -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
+  <!-- custom css link -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
-    - google font link
-  -->
+  <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -27,16 +21,9 @@
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
-
   <main>
 
-    <!--
-      - #SIDEBAR
-    -->
-
+    <!-- SIDEBAR -->
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
@@ -47,78 +34,60 @@
 
         <div class="info-content">
           <h1 class="name" title="Dixit Raj">Dixit Raj</h1>
-
           <p class="title">Web developer</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
-
           <ion-icon name="chevron-down"></ion-icon>
         </button>
 
       </div>
 
-      <div class="sidebar-info_more">
+      <div class="sidebar-info_more" data-sidebar-more>
 
         <div class="separator"></div>
 
         <ul class="contacts-list">
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Email</p>
-
               <a href="mailto:dixitraj281@gmail.com" class="contact-link">dixitraj281@gmail.com</a>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Phone</p>
-
               <a href="tel:+918114570645" class="contact-link">+91 8114570645</a>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="calendar-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Birthday</p>
-
               <time datetime="2003-03-28">March 28, 2003</time>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Location</p>
-
               <address>Hinjewadi, Pune, India</address>
             </div>
-
           </li>
 
         </ul>
@@ -126,73 +95,47 @@
         <div class="separator"></div>
 
         <ul class="social-list">
-
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/dixitraj28/" class="social-link">
+            <a href="https://www.linkedin.com/in/dixitraj28/" class="social-link" target="_blank" rel="noopener noreferrer">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://www.instagram.com/dixitraj_281?igsh=MTI2dDFaTFkcTN2ZQ%3D%3D&utm_source=qr" class="social-link">
+            <a href="https://www.instagram.com/dixitraj_281" class="social-link" target="_blank" rel="noopener noreferrer">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
-
         </ul>
 
       </div>
 
     </aside>
 
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
+    <!-- MAIN CONTENT -->
     <div class="main-content">
 
-      <!--
-        - #NAVBAR
-      -->
-
+      <!-- NAVBAR -->
       <nav class="navbar">
-
         <ul class="navbar-list">
-
+          <!-- data-target matches data-page below -->
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link active" data-nav-link data-target="about">About</button>
           </li>
-
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link data-target="resume">Resume</button>
           </li>
-
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link data-target="portfolio">Portfolio</button>
           </li>
-
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link data-target="contact">Contact</button>
           </li>
-
         </ul>
-
       </nav>
 
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
+      <!-- ABOUT -->
+      <article class="about active" data-page="about" id="about">
         <header>
           <h2 class="h2 article-title">About me</h2>
         </header>
@@ -200,298 +143,189 @@
         <section class="about-text">
           <p>
             I'm Software Developer from Pune, India, working in web development and devops.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+            I enjoy turning complex problems into simple, beautiful and intuitive designs.
           </p>
 
           <p>
             My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+            Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+            across your message and identity in the most creative way. I created web design for many famous brand companies.
           </p>
         </section>
 
-
-        <!--
-          - service
-        -->
-
         <section class="service">
-
           <h3 class="h3 service-title">What i'm doing</h3>
-
           <ul class="service-list">
 
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
               </div>
-
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
+                <p class="service-item-text">The most modern and high-quality design made at a professional level.</p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
                 <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
               </div>
-
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
+                <p class="service-item-text">High-quality development of sites at the professional level.</p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
                 <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
               </div>
-
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
+                <p class="service-item-text">Professional development of applications for iOS and Android.</p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
                 <img src="./assets/images/icon-photo.png" alt="camera icon" width="40">
               </div>
-
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Devops</h4>
-
-                <p class="service-item-text">
-                  Turning Code into Production-Ready Systems with Precision.
-                </p>
+                <p class="service-item-text">Turning Code into Production-Ready Systems with Precision.</p>
               </div>
-
             </li>
 
           </ul>
-
         </section>
-
-
       </article>
 
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
+      <!-- RESUME -->
+      <article class="resume" data-page="resume" id="resume">
         <header>
           <h2 class="h2 article-title">Resume</h2>
         </header>
 
         <section class="timeline">
-
           <div class="title-wrapper">
             <div class="icon-box">
               <ion-icon name="book-outline"></ion-icon>
             </div>
-
             <h3 class="h3">Education</h3>
           </div>
 
           <ol class="timeline-list">
-
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">Lovely Professional University</h4>
-
               <span>2020 — 2024</span>
-
-
             </li>
-
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">Satyam International</h4>
-
               <span>2018 — 2020</span>
-
-
             </li>
-
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">Shivam Convent</h4>
-
               <span>2017 — 2018</span>
-
-
             </li>
-
           </ol>
-
         </section>
 
         <section class="timeline">
-
           <div class="title-wrapper">
             <div class="icon-box">
               <ion-icon name="book-outline"></ion-icon>
             </div>
-
             <h3 class="h3">Experience</h3>
           </div>
 
           <ol class="timeline-list">
-
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">Tata Consultancy Services</h4>
-
               <span>2024 — Present</span>
-
               <p class="timeline-text">
-              -Engineered Java + Spring Boot backend services and optimized REST APIs used in banking & payment systems, strengthening my foundation in algorithms, data structures, performance tuning, and scalability.
-              -Built & maintained high-reliability backend modules, debugging complex issues across distributed environments and delivering solutions with strong ownership and strict deadlines.
-              -Developed UI components using Angular/React + TypeScript, improving interactivity and reducing response latency across high-traffic pages.
-              -Enhanced system reliability by improving logging, monitoring, and root-cause debugging, reducing MTTR by 20%.
-              -Implemented OAuth2/JWT authentication, strengthened SAST remediation, and enforced secure coding patterns.
-              -Improved API throughput by optimizing SQL queries (PostgreSQL/MySQL) and refactoring data models.
-              -Contributed to CI/CD workflows using Jenkins, Tekton, Harness, enabling faster, automated deploy cycles and stable release pipelines.
-              -Collaborated in Agile sprints, contributing meaningfully to code reviews, grooming, estimation, and release planning.
-
+                - Engineered Java + Spring Boot backend services and optimized REST APIs used in banking & payment systems.
+                - Built & maintained high-reliability backend modules across distributed environments.
+                - Developed UI components using Angular/React + TypeScript; improved interactivity and reduced latency.
+                - Improved system reliability by enhancing logging and monitoring, reducing MTTR by 20%.
+                - Implemented OAuth2/JWT authentication and secure coding patterns.
+                - Optimized SQL queries (PostgreSQL/MySQL) and refactored data models.
+                - Contributed to CI/CD workflows using Jenkins, Tekton, Harness.
               </p>
-
             </li>
 
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">PESU Venture Labs</h4>
-
               <span>2023 — 2024</span>
-
               <p class="timeline-text">
-                – Contributed to Zeru, an AI-powered decentralized lending platform building a universal credit layer for the on-chain economy, enabling unsecured, behavior-based loans.</br>
-                – Developed and optimized responsive frontend interfaces using Next.js, Tailwind CSS, and Shadcn UI to enhance user experience and dashboard interactivity.</br>
-                – Integrated smart contracts with MetaMask and Web3.js, enabling seamless wallet-based transactions and lending functionality.</br>
-                – Performed manual and automated smart contract testing, identifying security vulnerabilities and logic flaws during audits.</br>
-                – Supported backend workflows using Node.js, Express.js, and MongoDB, ensuring reliable API interaction with decentralized components.
+                – Contributed to Zeru, an AI-powered decentralized lending platform.
+                – Built responsive interfaces using Next.js, Tailwind CSS, Shadcn UI.
+                – Integrated smart contracts with MetaMask and Web3.js.
+                – Performed smart contract testing and audits.
+                – Supported backend workflows using Node.js, Express.js, MongoDB.
               </p>
-
             </li>
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Celebal Technologies </h4>
-
+              <h4 class="h4 timeline-item-title">Celebal Technologies</h4>
               <span>2023 — 2023</span>
-
               <p class="timeline-text">
-                – Developed frontend features using React.js, Redux, and Vite.</br>
-                – Collaborated with senior developers, improved performance, and practiced clean code and version control.
+                – Developed frontend features using React.js, Redux, and Vite.
+                – Practiced clean code and version control.
               </p>
-
             </li>
-
           </ol>
-
         </section>
 
         <section class="skill">
-
           <h3 class="h3 skills-title">My skills</h3>
 
           <ul class="skills-list content-card">
-
             <li class="skills-item">
-
               <div class="title-wrapper">
                 <h5 class="h5">Frontend</h5>
                 <data value="80">80%</data>
               </div>
-
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 80%;"></div>
               </div>
-
             </li>
 
             <li class="skills-item">
-
               <div class="title-wrapper">
                 <h5 class="h5">Backend</h5>
                 <data value="90">90%</data>
               </div>
-
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 90%;"></div>
               </div>
-
             </li>
 
             <li class="skills-item">
-
               <div class="title-wrapper">
                 <h5 class="h5">Devops</h5>
                 <data value="80">80%</data>
               </div>
-
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 80%;"></div>
               </div>
-
             </li>
 
             <li class="skills-item">
-
               <div class="title-wrapper">
                 <h5 class="h5">AI</h5>
                 <data value="70">70%</data>
               </div>
-
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 70%;"></div>
               </div>
-
             </li>
-
           </ul>
-
         </section>
-
       </article>
 
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
+      <!-- PORTFOLIO -->
+      <article class="portfolio" data-page="portfolio" id="portfolio">
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
         </header>
@@ -499,233 +333,127 @@
         <section class="projects">
 
           <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
+            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+            <li class="filter-item"><button data-filter-btn>Applications</button></li>
+            <li class="filter-item"><button data-filter-btn>Web development</button></li>
           </ul>
 
           <div class="filter-select-box">
-
             <button class="filter-select" data-select>
-
               <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
+              <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
             </button>
 
             <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
+              <li class="select-item"><button data-select-item>All</button></li>
+              <li class="select-item"><button data-select-item>Applications</button></li>
+              <li class="select-item"><button data-select-item>Web development</button></li>
             </ul>
-
           </div>
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://asc1.netlify.app/">
-
+            <!-- Each project has a single anchor wrapping the content (no nested anchors) -->
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://asc1.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
                   <img src="./assets/images/project-1.jpg" alt="ASC" loading="lazy">
                 </figure>
-                <a href="https://github.com/Dixitraj281/Asc-project">
                 <h3 class="project-title">Associated Scientific Corporation Website</h3>
-
                 <p class="project-category">Web development</p>
               </a>
-              </a>
+              <div style="margin-top:6px;"><a href="https://github.com/Dixitraj281/Asc-project" target="_blank" rel="noopener noreferrer">Source →</a></div>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://password-manager-a8peryfc5-dixit-rajs-projects.vercel.app/">
-
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://password-manager-a8peryfc5-dixit-rajs-projects.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-2.png" alt="Password Manager" loading="lazy">
                 </figure>
-                <a href="https://github.com/Dixitraj281/password-manager">
                 <h3 class="project-title">Password Manager</h3>
-
                 <p class="project-category">Web development</p>
               </a>
-              </a>
+              <div style="margin-top:6px;"><a href="https://github.com/Dixitraj281/password-manager" target="_blank" rel="noopener noreferrer">Source →</a></div>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://restro-management-alpha.vercel.app/">
-
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://restro-management-alpha.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-3.jpg" alt="Restro Management" loading="lazy">
                 </figure>
-                <a href="https://github.com/Dixitraj281/Restro-Management">
                 <h3 class="project-title">Restro Management</h3>
-              </a>
                 <p class="project-category">Web development</p>
-
               </a>
+              <div style="margin-top:6px;"><a href="https://github.com/Dixitraj281/Restro-Management" target="_blank" rel="noopener noreferrer">Source →</a></div>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-4.png" alt="Expense Tracker" loading="lazy">
                 </figure>
-                <a href="https://github.com/Dixitraj281/Expense_tracker">
-                <h3 class="project-title">Expense Tracker(Android)</h3>
-
+                <h3 class="project-title">Expense Tracker (Android)</h3>
                 <p class="project-category">Applications</p>
               </a>
-              </a>
+              <div style="margin-top:6px;"><a href="https://github.com/Dixitraj281/Expense_tracker" target="_blank" rel="noopener noreferrer">Source →</a></div>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-5.png" alt="Meme Share" loading="lazy">
                 </figure>
-                <a href="http://github.com/Dixitraj281/Meme_Share">
-                <h3 class="project-title">Meme Share(ios)</h3>
-
+                <h3 class="project-title">Meme Share (iOS)</h3>
                 <p class="project-category">Applications</p>
               </a>
-              </a>
+              <div style="margin-top:6px;"><a href="http://github.com/Dixitraj281/Meme_Share" target="_blank" rel="noopener noreferrer">Source →</a></div>
             </li>
-
-            
 
           </ul>
 
         </section>
-
       </article>
 
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
+      <!-- CONTACT -->
+      <article class="contact" data-page="contact" id="contact">
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
         <section class="mapbox" data-mapbox>
           <figure>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1551.5096598102282!2d73.68327535707259!3d18.588484315669213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1752000019460!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1551.5096598102282!2d73.68327535707259!3d18.588484315669213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1752000019460!5m2!1sen!2sin"
+              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </figure>
         </section>
 
         <section class="contact-form">
-
           <h3 class="h3 form-title">Contact Form</h3>
 
           <form action="https://formspree.io/f/xvgrjbjj" method="POST" class="form" data-form>
-
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
 
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <!-- Enabled button (was disabled in your original) -->
+            <button class="form-btn" type="submit" data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
-
           </form>
-
         </section>
-
       </article>
 
-        <!-- ChatGPT Live Chatbot
-  <div id="chatbot-container" style="position: fixed; bottom: 20px; right: 20px; width: 320px; background: white; border: 1px solid #ccc; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2); font-family: Arial, sans-serif; z-index: 999;">
-    <div style="background-color: #4f46e5; color: white; padding: 10px; border-radius: 10px 10px 0 0;">
-      💬 Chat with Dixit's Assistant
     </div>
-    <div id="chat-display" style="padding: 10px; height: 300px; overflow-y: auto; font-size: 14px;"></div>
-    <div style="display: flex; border-top: 1px solid #ccc;">
-      <input type="text" id="chat-input" placeholder="Ask something..." style="flex: 1; padding: 8px; border: none; outline: none;">
-      <button onclick="sendToGPT()" style="padding: 8px 12px; background-color: #4f46e5; color: white; border: none; cursor: pointer;">➤</button>
-    </div>
-  </div>
-
-  <script>
-    async function sendToGPT() {
-      const input = document.getElementById('chat-input');
-      const display = document.getElementById('chat-display');
-      const userText = input.value.trim();
-      if (!userText) return;
-
-      display.innerHTML += `<p><strong>You:</strong> ${userText}</p>`;
-      input.value = '';
-
-      try {
-        const res = await fetch('https://yourdomain.com/api/chat', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ message: userText })
-        });
-
-        const data = await res.json();
-        display.innerHTML += `<p><strong>Bot:</strong> ${data.reply}</p>`;
-        display.scrollTop = display.scrollHeight;
-      } catch (err) {
-        display.innerHTML += `<p style="color:red;"><strong>Error:</strong> Unable to fetch response</p>`;
-      }
-    }
-  </script> -->
-
-    </div>
-
   </main>
 
 
